@@ -1,0 +1,31 @@
+{
+  "name": "unimapperjs-example",
+  "version": "1.0.0",
+  "description": "Simple example for UniMapperJS package",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hookyns/unimapperjs-example.git"
+  },
+  "keywords": [
+    "UniMapperJS",
+    "ORM",
+    "Example"
+  ],
+  "author": "Roman Jámbor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hookyns/unimapperjs-example/issues"
+  },
+  "homepage": "https://github.com/Hookyns/unimapperjs-example#readme",
+  "devDependencies": {
+    "@types/node": "^8.0.34"
+  },
+  "dependencies": {
+    "mysql2": "latest",
+    "unimapperjs": "latest"
+  }
+}

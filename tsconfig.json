@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "commonjs",
+		"lib": [
+			"ES2015",
+			"ES2016",
+			"ES2017"
+		],
+		"allowJs": true,
+		"declaration": true,
+		"sourceMap": true,
+		"outDir": "./",
+		"rootDir": "./",
+		"removeComments": false,
+		"experimentalDecorators": true
+	},
+	"include": [
+		"**/*"
+	],
+	"exclude": [
+	]
+}
