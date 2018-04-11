@@ -5,6 +5,22 @@
 
 module.exports = {
 	up: async function up(adapter) {
+		await adapter.createEntity("Subject", {
+			  "id": {
+				  "type": "Number"
+				, "length": 11
+				, "primary": true
+				, "autoIncrement": true
+			}
+			, "name": {
+				  "type": "String"
+				, "length": 100
+			}
+			, "active": {
+				  "type": "Boolean"
+			}
+		});
+
 		await adapter.createEntity("Student", {
 			  "id": {
 				  "type": "String"
