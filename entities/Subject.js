@@ -1,10 +1,8 @@
 const {type} = require("unimapperjs");
 const {domain} = require("../domain");
 
-/**
- * @class Subject
- * @extends Entity
- */
+// Simple entity declaration in JS; without mapping
+
 const Subject = domain.createEntity("Subject", {
 	name: type.string.length(100),
 	active: type.boolean
