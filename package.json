@@ -26,6 +26,6 @@
   },
   "dependencies": {
     "mysql2": "latest",
-    "unimapperjs": "latest"
+    "unimapperjs": "^1.1.0"
   }
 }

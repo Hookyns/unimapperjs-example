@@ -3,11 +3,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const Teacher_1 = require("./entities/Teacher");
 const Student_1 = require("./entities/Student");
 const Subject_1 = require("./entities/Subject");
+const domain_1 = require("./domain");
 // Because this script is in same event loop iteration as entity declaration, we must setImmediate
 // More info in wiki - Entities
 setImmediate(async function () {
     // Prepare test data
-    await require("test-data").insertTestData();
+    await require("./test-data").insertTestData();
     // Teachers their first name contains "u"
     let teachers = await Teacher_1.Teacher.getAll()
         .filter(t => t.firstName.includes("u"))
@@ -36,5 +37,6 @@ setImmediate(async function () {
         name: s.name
     }))
         .exec();
+    await domain_1.domain.dispose();
 });
 //# sourceMappingURL=index.js.map
